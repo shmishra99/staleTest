@@ -8,7 +8,7 @@ name: Mark and close stale PRs/issues
 
 on:
   schedule:
-  - cron: "30 1 * * *"
+  - cron: "* */5 * * *"
 
 jobs:
   stale:
@@ -30,10 +30,10 @@ jobs:
         close-issue-message: "Closing as stale. Please reopen if you'd like to work on this further"
               
         # Number of days of inactivity before a stale issue is closed
-        days-before-issue-close: 14
+        days-before-issue-close: 0
         
         # Number of days of inactivity before an issue Request becomes stale
-        days-before-issue-stale: 14
+        days-before-issue-stale: 0
          
         #Check for label to stale or close the issue/PR
         any-of-labels: 'stat:awaiting response'
