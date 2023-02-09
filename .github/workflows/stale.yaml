@@ -9,6 +9,13 @@ name: Mark and close stale PRs/issues
 on:
   schedule:
   - cron: "*/4 * * * *"
+  
+  
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+  
 
 jobs:
   stale:
