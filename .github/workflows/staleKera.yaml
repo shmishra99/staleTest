@@ -15,7 +15,7 @@ jobs:
         uses: actions/stale@v5
         with:
           days-before-issue-stale: 0
-          days-before-issue-close: 1
+          days-before-issue-close: 0
           stale-issue-label: "stale"
           remove-stale-when-updated: false
           # reason for closed the issue default value is not_planned
