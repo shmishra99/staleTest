@@ -17,10 +17,12 @@ jobs:
           days-before-issue-stale: 0
           days-before-issue-close: 1
           stale-issue-label: "stale"
+          remove-stale-when-updated: false
           # reason for closed the issue default value is not_planned
           close-issue-reason: completed
           # List of labels to remove when issues/PRs unstale. 
-          labels-to-remove-when-unstale: "stat:awaiting response from contributor"
+          # labels-to-remove-when-unstale: "stat:awaiting response from contributor"
+          ignore-updates: true
           only-labels: "stat:awaiting response from contributor"
           stale-issue-message: > 
             This issue is stale because it has been open for 14 days with no activity.
