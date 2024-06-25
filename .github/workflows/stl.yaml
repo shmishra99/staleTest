@@ -21,8 +21,8 @@ jobs:
     steps:
     - uses: actions/stale@v9
       with:
-        days-before-issue-stale: 7
-        days-before-issue-close: 7
+        days-before-issue-stale: 0
+        days-before-issue-close: 0
         stale-issue-label: "status:stale"
         close-issue-reason: completed
         any-of-labels: "status:awaiting user response,status:more data needed"
